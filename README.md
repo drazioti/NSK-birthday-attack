@@ -13,10 +13,12 @@ You will need to have installed the libraries in Built With section, have the la
 
 To build the single core version,
 ```
+cd procedural
 make all2
 ```
 To build the parallel version of this attack
 ```
+cd parallel
 make all2par
 ```
 This make argument, builds the project and we get multy.out which is the excecutable.

@@ -1,11 +1,17 @@
 # Naccache Stern Knapsack birthday attack
 
-We provide an improved and parallel implementation of a previous attack to Naccache-Stern knapsack (NSK) cryptosystem.
+We provide an improved and parallel implementation of a previous attack ([1]) to Naccache-Stern knapsack (NSK) cryptosystem.
 
-Reference
------------
-M. Anastasiadis, N. Chatzis and K. A. Draziotis, Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, 
+[1] M. Anastasiadis, N. Chatzis and K. A. Draziotis, Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, 
 Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43. 
+
+## Authors
+
+* **Vasileios Martidis**
+
+## License
+
+This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Getting Started
 
@@ -74,13 +80,6 @@ Average time : 4.575600s
 
 Explain how to run the automated tests for this system
 
-## Authors
-
-* **Vasileios Martidis**
-
-## License
-
-This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 

@@ -1,15 +1,17 @@
-# NSK birthday attack
+# Naccache Stern Knapsack birthday attack
 
 We provide an improved and parallel implementation of a previous attack to Naccache-Stern knapsack (NSK) cryptosystem.
 
-Ref. : Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43 IPL, joint work with M. Anastasiadis and N. Chatzis.
+Reference
+-----------
+M. Anastasiadis, N. Chatzis and K. A. Draziotis, Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, 
+Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43, 
 
-One folder has the seriac version and the master has the parallel
 ## Getting Started
 
 You will need to have installed the libraries in Built With section, have the latest g++ version to build the project.
 
-To build the seriac version of this attack
+To build the single core version,
 ```
 make all2
 ```
@@ -17,7 +19,7 @@ To build the parallel version of this attack
 ```
 make all2par
 ```
-This make argument builds the project and we get multy.out which is the excecutable.
+This make argument, builds the project and we get multy.out which is the excecutable.
 
 ### Running the attack
 

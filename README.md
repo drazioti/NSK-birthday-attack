@@ -5,9 +5,18 @@ We provide an improved and parallel implementation of a previous attack to Nacca
 Reference
 -----------
 M. Anastasiadis, N. Chatzis and K. A. Draziotis, Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, 
-Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43, 
+Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43. 
 
 ## Getting Started
+
+First you need to install the following programs.
+
+* [GMP](https://gmplib.org/) - Arithmetic without limitations
+* [args](https://github.com/Taywee/args) - Argument parsing library
+* [OpenSSL](https://www.openssl.org/) - Used for the md5-hashes
+
+and for the parallel version (optional)
+* [Openmp](https://www.openmp.org/) - API specification for parallel programming
 
 You will need to have installed the libraries in Built With section, have the latest g++ version to build the project.
 
@@ -35,16 +44,35 @@ After reading the help output. We can run for example an attack to a message wit
 ./multy.out -p 3 --ham 7 --sb 3
 ```
 
+For instance 
+```
+./multy.out -p 1 --ham 7 --sb 0
+---------Start---------
+P number bits : 600
+msg    : 19947313142309510170280192
+Hamming weight of msg: 7
+Bound of the attack : 42
+---------NS attack---------
+Round : 1
+h1 4
+h2 3
+Round's attack time : 4.563700s
+Round : 2
+h1 4
+h2 3
+Round's attack time : 4.575533s
+Round : 3
+h1 4
+h2 3
+msg = 19947313142309510170280192
+Round's attack time : 4.587568s
+Total time : 13.726801s
+Average time : 4.575600s
+```
+
 ## Running the tests
 
 Explain how to run the automated tests for this system
-
-## Built With
-
-* [Openmp](https://www.openmp.org/) - API specification for parallel programming
-* [GMP](https://gmplib.org/) - Arithmetic without limitations
-* [OpenSSL](https://www.openssl.org/) - Used for the md5-hashes
-* [args](https://github.com/Taywee/args) - Argument parsing library
 
 ## Authors
 
@@ -56,5 +84,4 @@ This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.
 
 ## Acknowledgments
 
-* [First version of this attack](https://github.com/drazioti/python_scripts/tree/master/paper_ns)
-
+* [First version of this attack written in Sagemath](https://github.com/drazioti/python_scripts/tree/master/paper_ns)

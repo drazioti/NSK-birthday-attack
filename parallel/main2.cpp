@@ -82,12 +82,11 @@ so that (n/2-#) > 0\n\
         return 1;
     }
     
-    //print start
-    cout<<"---------Start---------"<<endl;
+    cout<<"---------Generating keys..."<<endl;
 
     // Init bits of the p 
     if (p_bits) { 
-        std::cout << "P number bits : ";
+        std::cout << "number bits of prime p: ";
         switch(args::get(p_bits)) {
             case 1 : lenp=600;
                     break;
@@ -172,7 +171,7 @@ so that (n/2-#) > 0\n\
     // print field 2
     // cout<<"Hamming : "<<hamming<<endl;
     cout << "Bound of the attack : "<<bound<<endl;
-    cout<<"---------NS attack---------"<<endl;
+    cout<<"---------Starting ..."<<endl;
     //init vars of the main program rounds number result and total time
     unsigned int round=0;                                   // var to count attack rounds
     bool res =false;                                        // var for the result of each attack loop
@@ -189,10 +188,7 @@ so that (n/2-#) > 0\n\
         // set starting time var
         // time_t start_time = clock();                                    // start time of the attack
         res = ns->attack(n,bound,p,c,hamming,s,flag,I1,I2,U1,U2,s1,s2); // perform the NS attack and print it's result
-        // double round_time=time_passed(start_time);                      // time after this round of attack
-        // cout << "Round's attack time : "   << fixed << round_time <<"s" << endl;   // print total time
-        // clock_total=clock_total+round_time;                             // increase total time with the round time
-        
+      
         //clear field
         // free I1 array and I2 psevdo-array 
         delete[] I1;
@@ -202,8 +198,6 @@ so that (n/2-#) > 0\n\
         delete[] U1;
         delete[] U2;
     }
-    // cout << "Total time : "   << fixed << clock_total <<"s" << endl;          // print total time
-    // cout << "Average time : " << fixed << clock_total/round <<"s" << endl;    // print average time per round
     
     // free Ns obj
     delete ns;

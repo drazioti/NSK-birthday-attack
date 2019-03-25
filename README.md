@@ -5,6 +5,8 @@ We provide an improved and parallel implementation of a previous attack ([1]) to
 [1] M. Anastasiadis, N. Chatzis and K. A. Draziotis, Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, 
 Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43. 
 
+For bugs refer to the original [repo](https://github.com/vamartid/NSK-birthday-attack). 
+
 ## Authors
 
 * **Vasileios Martidis**
@@ -74,11 +76,6 @@ msg = 19342886918842423195996160
 time : 4.605926s
 Overall time : 13.760952s
 ```
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
 
 ## Acknowledgments
 

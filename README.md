@@ -1,9 +1,11 @@
 # Naccache Stern Knapsack birthday attack
 
 We provide an improved and parallel implementation of a previous attack ([1]) to Naccache-Stern knapsack (NSK) cryptosystem.
+The cryptosystem is described in [2]. 
 
 [1] M. Anastasiadis, N. Chatzis and K. A. Draziotis, Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, 
 Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43. 
+[2] D. Naccache and J. Stern, A New Public Key Cryptosystem Based on Higher Residues, Proceedings of the 5th ACM Conference on Computer and Communications Security. CCS '98. ACM. pp. 59–66. doi:10.1145/288090.288106.
 
 For reporting bugs, please refer to the original [repository](https://github.com/vamartid/NSK-birthday-attack). 
 
@@ -28,12 +30,13 @@ and for the parallel version (optional)
 
 To build the single core version,
 ```
-cd procedural
+git clone https://github.com/drazioti/NSK-birthday-attack.git
+cd NSK-birthday-attack/procedural/
 make all2
 ```
 To build the parallel version of this attack
 ```
-cd parallel
+cd NSK-birthday-attack/parallel/
 make all2par
 ```
 This make argument, builds the project and we get multy.out which is the excecutable.

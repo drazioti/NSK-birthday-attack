@@ -28,16 +28,18 @@ First, you need to install the following programs.
 and for the parallel version (optional)
 * [Openmp](https://www.openmp.org/) - API specification for parallel programming
 
+Tested succesfuly with g++ ver.4.9.2-10
+
 To build the single core version,
 ```
-git clone https://github.com/drazioti/NSK-birthday-attack.git
-cd NSK-birthday-attack/procedural/
-make all2
+$git clone https://github.com/drazioti/NSK-birthday-attack.git
+$cd NSK-birthday-attack/procedural/
+$make all2
 ```
 To build the parallel version of this attack
 ```
-cd NSK-birthday-attack/parallel/
-make all2par
+$cd NSK-birthday-attack/parallel/
+$make all2par
 ```
 This make argument, builds the project and we get multy.out which is the excecutable.
 
@@ -45,17 +47,17 @@ This make argument, builds the project and we get multy.out which is the excecut
 
 You can view how to use the arguments of the excecutable like this. 
 ```
-./multy.out --help
+$./multy.out --help
 ```
 
 After reading the help output. We can run for example an attack to a message with hamming 7 and p of 2048-bits and b=n/2-3  like this.
 ```
-./multy.out -p 3 --ham 7 --sb 3
+$./multy.out -p 3 --ham 7 --sb 3
 ```
 
 For instance 
 ```
-./multy.out -p 1 --ham 7 --sb 0
+$./multy.out -p 1 --ham 7 --sb 0
 ---------Generating keys...
 number bits of prime p: 600
 message   : 19342886918842423195996160

@@ -1,7 +1,10 @@
 We provide some binary executables, compiled in linux platoforms.
+
+This one is comiled in Debian system with g++ 9.4.2-10.
+
 We tested the following,
 ```
-$./attack_procedural.out -p 1 --ham 9 --sb 0 
+$./attack_procedural_deb.out -p 1 --ham 9 --sb 0 
 number bits of prime p: 600
 message   : 19345331680008817195876354
 Hamming weight of msg: 9

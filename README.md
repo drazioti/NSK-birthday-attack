@@ -29,19 +29,20 @@ First, you need to install the following programs.
 and for the parallel version (optional)
 * [Openmp](https://www.openmp.org/) - API specification for parallel programming
 
-Tested succesfuly with g++ ver.4.9.2-10
+Tested succesfully with g++ ver.4.9.2-10
 
-To build the single core version,
+To build the project,
 ```
 $git clone https://github.com/drazioti/NSK-birthday-attack.git
 $cd NSK-birthday-attack/procedural/
 $make all2
 ```
-To build the parallel version of this attack
+To build the parallel version,
 ```
 $cd NSK-birthday-attack/parallel/
 $make all2par
 ```
+
 This make argument, builds the project and we get multy.out which is the excecutable.
 
 ### Running the attack

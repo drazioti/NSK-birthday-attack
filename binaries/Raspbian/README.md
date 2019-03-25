@@ -1,7 +1,7 @@
 ## INSTALL on raspberry pi3
 Install gmpxxx
 ```
-sudo apt install libgmp-dev
+$sudo apt install libgmp-dev
 ```
 
 Install openssl
@@ -28,7 +28,7 @@ $make all2
 ```
 
 ```
-$./multy.out -p 1 --ham 7 --sb 0
+$./attack_procedural_rasp.out -p 1 --ham 7 --sb 0
 ---------Generating keys...
 number bits of prime p: 600
 message   : 19349906031045596210659328
@@ -50,3 +50,4 @@ msg = 19349906031045596210659328
 time : 9.316042s
 Overall time : 27.912776s
 ```
+

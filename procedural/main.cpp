@@ -87,7 +87,7 @@ so that (n/2-#) > 0\n\
     
     // Init bits of the p 
     if (p_bits) { 
-        std::cout << "P number bits : ";
+        std::cout << "number bits of prime p : ";
         switch(args::get(p_bits)) {
             case 1 : lenp=600;
                     break;
@@ -170,7 +170,7 @@ so that (n/2-#) > 0\n\
     // print field 2
     // cout<<"Hamming : "<<hamming<<endl;
     cout << "Bound of the attack : "<<bound<<endl;
-    cout<<"---------NS attack---------"<<endl;
+    cout<<"--------- Starting ..."<<endl;
     
     int s1,s2,*I1,*I2;                                  // lists
     mpz_class *U1,*U2;                                  // declare vars I1,I2,U1,U2

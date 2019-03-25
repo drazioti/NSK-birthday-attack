@@ -53,27 +53,26 @@ After reading the help output. We can run for example an attack to a message wit
 For instance 
 ```
 ./multy.out -p 1 --ham 7 --sb 0
----------Start---------
-P number bits : 600
-msg    : 19947313142309510170280192
+---------Generating keys...
+number bits of prime p: 600
+message   : 19342886918842423195996160
 Hamming weight of msg: 7
 Bound of the attack : 42
----------NS attack---------
+---------Starting ...
 Round : 1
 h1 4
 h2 3
-Round's attack time : 4.563700s
+time : 4.568272s
 Round : 2
 h1 4
 h2 3
-Round's attack time : 4.575533s
+time : 4.586754s
 Round : 3
 h1 4
 h2 3
-msg = 19947313142309510170280192
-Round's attack time : 4.587568s
-Total time : 13.726801s
-Average time : 4.575600s
+msg = 19342886918842423195996160
+time : 4.605926s
+Overall time : 13.760952s
 ```
 
 ## Running the tests

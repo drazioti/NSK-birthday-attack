@@ -82,12 +82,11 @@ so that (n/2-#) > 0\n\
         return 1;
     }
     
-    //print start
-    cout<<"---------Start---------"<<endl;
+    cout<<"---------Generating keys..."<<endl;
 
     // Init bits of the p 
     if (p_bits) { 
-        std::cout << "P number bits : ";
+        std::cout << "number bits of prime p: ";
         switch(args::get(p_bits)) {
             case 1 : lenp=600;
                     break;
@@ -104,7 +103,7 @@ so that (n/2-#) > 0\n\
     
     // randomness check
     if (no_randomness) {
-        std::cout << "Randomised OFF on I1,I2 of the attack" << std::endl; 
+        std::cout << "Randomized OFF on I1,I2 of the attack" << std::endl; 
     }
 
     ns->choose_pk_sk(lenp,p,q,n,u,s);                    // set p,q,n,u,s
@@ -145,7 +144,7 @@ so that (n/2-#) > 0\n\
     // cout<< "n " << n <<endl;
     // cout<< "p " << p <<endl;
     // cout<< "q " << q <<endl;
-    cout<< "msg    : " << m <<endl;
+    cout<< "message   : " << m <<endl;
     // cout<< "m bits : " << m.get_str(2) <<endl;
     // cout<< "c      : "<< c <<endl;
     // cout<< "m2     : " << m2 <<endl;
@@ -172,7 +171,7 @@ so that (n/2-#) > 0\n\
     // print field 2
     // cout<<"Hamming : "<<hamming<<endl;
     cout << "Bound of the attack : "<<bound<<endl;
-    cout<<"---------NS attack---------"<<endl;
+    cout<<"---------Starting ..."<<endl;
     //init vars of the main program rounds number result and total time
     unsigned int round=0;                                   // var to count attack rounds
     bool res =false;                                        // var for the result of each attack loop
@@ -190,7 +189,7 @@ so that (n/2-#) > 0\n\
         time_t start_time = clock();                                    // start time of the attack
         res = ns->attack(n,bound,p,c,hamming,s,flag,I1,I2,U1,U2,s1,s2); // perform the NS attack and print it's result
         double round_time=time_passed(start_time);                      // time after this round of attack
-        cout << "Round's attack time : "   << fixed << round_time <<"s" << endl;   // print total time
+        cout << "time : "   << fixed << round_time <<"s" << endl;   // print total time
         clock_total=clock_total+round_time;                             // increase total time with the round time
         
         //clear field
@@ -202,8 +201,8 @@ so that (n/2-#) > 0\n\
         delete[] U1;
         delete[] U2;
     }
-    cout << "Total time : "   << fixed << clock_total <<"s" << endl;          // print total time
-    cout << "Average time : " << fixed << clock_total/round <<"s" << endl;    // print average time per round
+    cout << "Overall time : "   << fixed << clock_total <<"s" << endl;          // print total time
+   // cout << "Average time : " << fixed << clock_total/round <<"s" << endl;    // print average time per round
     
     // free Ns obj
     delete ns;

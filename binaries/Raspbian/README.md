@@ -1,7 +1,4 @@
-
-
-
-##INSTALL on raspberry pi3
+## INSTALL on raspberry pi3
 Install gmpxxx
 ```
 sudo apt install libgmp-dev

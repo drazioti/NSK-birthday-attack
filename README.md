@@ -5,7 +5,7 @@ We provide an improved and parallel implementation of a previous attack ([1]) to
 [1] M. Anastasiadis, N. Chatzis and K. A. Draziotis, Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, 
 Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43. 
 
-For bugs refer to the original [repo](https://github.com/vamartid/NSK-birthday-attack). 
+For reporting bugs, please refer to the original [repository](https://github.com/vamartid/NSK-birthday-attack). 
 
 ## Authors
 
@@ -17,7 +17,7 @@ This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.
 
 ## Getting Started
 
-First you need to install the following programs.
+First, you need to install the following programs.
 
 * [GMP](https://gmplib.org/) - Arithmetic without limitations
 * [args](https://github.com/Taywee/args) - Argument parsing library
@@ -25,8 +25,6 @@ First you need to install the following programs.
 
 and for the parallel version (optional)
 * [Openmp](https://www.openmp.org/) - API specification for parallel programming
-
-You will need to have installed the libraries in Built With section, have the latest g++ version to build the project.
 
 To build the single core version,
 ```

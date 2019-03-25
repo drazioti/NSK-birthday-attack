@@ -1,6 +1,6 @@
 We provide some binary executables, compiled in linux platoforms.
 
-This one is comiled in Debian system with g++ 9.4.2-10.
+This one is compiled in Debian system (Debian 3.16.51-2 (2017-12-03) x86_64 GNU/Linux) with g++ 9.4.2-10.
 
 We tested the following,
 ```

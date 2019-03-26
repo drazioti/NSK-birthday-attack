@@ -82,10 +82,10 @@ time : 4.605926s
 Overall time : 13.760952s
 ```
 
-## Parallelism
+## Parallelism (details)
 After experiments we calculated that the cost of the computation to construct the
-sets Ui,hi , is the most intensive part of the algorithm.
-In this implementation we parallelized the creation of the elements of the sets Ui,hi, so that each thread will have to calculate one element and add it to the Ui,hi set.
+sets (Ui) , is the most intensive part of the algorithm.
+In this implementation we parallelized the creation of the elements of the sets (Ui), so that each thread will have to calculate one element and add it to the (Ui) set.
 
 Also we use the [libstdc++ parallel mode](https://gcc.gnu.org/onlinedocs/libstdc++/manual/parallel_mode_using.html) for the functions sort,intersection and find_if.
 

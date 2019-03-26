@@ -18,3 +18,7 @@ Round : 7
 msg = 19531716996520891069267968
 0:13.89 ./attack_parallel_deb.out -p 1 --ham 7
 ```
+If you want to run say 10 times the program
+```
+$n=0; while [[ $n -lt 10 ]]; do /usr/bin/time -f "%E %C" ./attack_parallel_deb.out -p 1 --ham 7; n=$((n+1)); done
+```

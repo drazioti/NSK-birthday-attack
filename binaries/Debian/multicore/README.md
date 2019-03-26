@@ -22,3 +22,4 @@ If you want to run say 10 times the program
 ```
 $n=0; while [[ $n -lt 10 ]]; do /usr/bin/time -f "%E %C" ./attack_parallel_deb.out -p 1 --ham 7; n=$((n+1)); done
 ```
+The algorithm uses so many cores as there are free in our system.

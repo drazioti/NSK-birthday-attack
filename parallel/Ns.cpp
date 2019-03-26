@@ -216,9 +216,9 @@ void Ns::gen(unsigned int n,double bound1,int flag,mpz_class p,mpz_class *u,int 
             I1[i]=i;
         }
         //print the array
-        for(int i =0;i<n+1;i++){
-            cout << I1[i]<<", ";
-        }cout<< endl;
+       // for(int i =0;i<n+1;i++){
+       //     cout << I1[i]<<", ";
+       // }cout<< endl;
         if(!randomness_off){
             // //shuffle the array we created
             // we do not suffle the first element which is n+1

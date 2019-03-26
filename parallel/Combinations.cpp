@@ -1,13 +1,11 @@
 // Combinations.cpp
 #include "Combinations.h"
 
-/**
- * Constructor of combination object
- * pushes needed numbers to vector
- * sets -1 if r is equal to zero
- * 
- * /
 Combinations::Combinations(int n,int r){
+    // Constructor of combination object
+    // pushes needed numbers to vector
+    // sets -1 if r is equal to zero
+    
     //if inputs are 0
     if (n==0){
         throw std::exception();
@@ -91,3 +89,4 @@ void Combinations::fact(mpz_class& t,int n){
     }
     t=t_tmp;
 };
+

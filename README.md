@@ -6,7 +6,7 @@ The cryptosystem is described in [2].
 [1] M. Anastasiadis, N. Chatzis and K. A. Draziotis, Birthday type attacks to the Naccache-Stern Knapsack cryptosystem, 
 Information Proc.Letters (Elsevier) Vol. 138, October 2018, Pages 39-43. 
 
-[2] D. Naccache and J. Stern, A New Public Key Cryptosystem, Eurocrypt '97, LNCS 1233.
+[2] D. Naccache and J. Stern, A New Public Key Cryptosystem, Eurocrypt '97, LNCS 1233, p. 27-36, Springer.
 
 For reporting bugs, please refer to the original [repository](https://github.com/vamartid/NSK-birthday-attack). 
 

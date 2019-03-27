@@ -28,7 +28,7 @@ $make all2
 ```
 
 ```
-$./attack_procedural_rasp.out -p 1 --ham 7 --sb 0
+$./multy.out -p 1 --ham 7 --sb 0
 ---------Generating keys...
 number bits of prime p: 600
 message   : 19349906031045596210659328

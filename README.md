@@ -52,12 +52,11 @@ You can view how to use the arguments of the excecutable like this.
 $./multy.out --help
 ```
 
-After reading the help output. We can run for example an attack to a message with hamming 7 and p of 2048-bits and b=n/2-3  like this.
+After reading the help output, we can run for example an attack to a message with hamming 7 and p of 2048-bits and b=n/2-3  like this,
 ```
 $./multy.out -p 3 --ham 7 --sb 3
 ```
-
-For instance 
+For instance,
 ```
 $./multy.out -p 1 --ham 7 --sb 0
 ---------Generating keys...

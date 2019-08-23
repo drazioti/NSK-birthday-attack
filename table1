@@ -1,0 +1,18 @@
+'''Code written in Sagemath for constructing table 1
+Also, we provide a function tha computes the value of Q'''
+
+#computation of Q
+def Q(b,ham):
+    h1,h2=floor(ham/2),ceil(ham/2)
+    Sb = binomial(b,h1) + binomial(b,h2)
+    a = 1/8 * log(Sb^3/6,2).n()
+    return a
+def mem(b,ham,Q):
+    h1,h2=floor(ham/2),ceil(ham/2)
+    _Sb_ = binomial(b,h1) + binomial(b,h2)
+    Sb = _Sb_
+    a = (8*Q+16*ham)*Sb
+    return a.n()
+    
+n=232;b=n/2;Q=12;
+[mem(b,ham,Q)/2^33 for ham in [7..13]]

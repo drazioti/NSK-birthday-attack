@@ -1,5 +1,5 @@
-'''Code written in Sagemath for constructing table 1 and table 2
-Also, we provide a function tha computes the value of Q'''
+'''Code written in Sagemath for constructing table 1 and table 2.
+Also, we provide a function that computes the value of Q'''
 reset()
     
 def mem(b,ham,Q):

@@ -9,10 +9,9 @@ def Q(b,ham):
     return a
 def mem(b,ham,Q):
     h1,h2=floor(ham/2),ceil(ham/2)
-    _Sb_ = binomial(b,h1) + binomial(b,h2)
-    Sb = _Sb_
+    Sb = binomial(b,h1) + binomial(b,h2)
     a = (8*Q+16*ham)*Sb
     return a.n()
     
 n=232;b=n/2;Q=12;
-[mem(b,ham,Q)/2^33 for ham in [7..13]]
+[ [ham,mem(b,ham,Q)/2^33] for ham in [7..13]]

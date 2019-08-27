@@ -1,4 +1,5 @@
-'''Code written in Sagemath for constructing table 1 and table 2.
+'''Code written in Sagemath for constructing table 1 and table 2 fot the
+paper : Enhancing a birthday type attack to Naccache-Stern Knapsack cryptosystem
 Also, we provide a function that computes the value of Q'''
 reset()
     

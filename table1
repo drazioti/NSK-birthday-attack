@@ -1,0 +1,30 @@
+'''Code written in Sagemath for constructing table 1 and table 2 fot the
+paper : Enhancing a birthday type attack to Naccache-Stern Knapsack cryptosystem
+Also, we provide a function that computes the value of Q'''
+reset()
+    
+def mem(b,ham,Q):
+    h1,h2=floor(ham/2),ceil(ham/2)
+    Sb = binomial(b,h1) + binomial(b,h2)
+    a = (8*Q+16*ham)*Sb
+    return a.n()
+    
+n=232;b=n/2;Q=12;
+print "b,Q:",b,Q
+print [ [ham,mem(b,ham,Q)/2^33] for ham in [7..13]]
+
+def mem2(b,ham):
+    def Q(b,ham):
+        h1,h2=floor(ham/2),ceil(ham/2)
+        Sb = binomial(b,h1) + binomial(b,h2)
+        a = 1/8 * log(Sb^3/6,2).n()
+        return a
+    
+    h1,h2=floor(ham/2),ceil(ham/2)
+    Sb = binomial(b,h1) + binomial(b,h2)
+    Q1 = Q(b,ham)
+    a = (4*Q1+8*ham)*Sb
+    return a.n()
+
+b = n/2 - 20;print "b=",b    
+[ [ham,mem2(b,ham)/2^33] for ham in [7..20]]

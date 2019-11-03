@@ -23,7 +23,11 @@ This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.
 First, you need to install the following programs. You need a linux platform.
 
 * [GMP](https://gmplib.org/) - Arithmetic without limitations
-For instance, $sudo apt-get install libgmp3-dev)
+
+For instance, 
+```
+$sudo apt-get install libgmp3-dev)
+```
 * [args](https://github.com/Taywee/args) - Argument parsing library
 * [OpenSSL](https://www.openssl.org/) - Used for the md5-hashes
 

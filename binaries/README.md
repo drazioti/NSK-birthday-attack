@@ -7,5 +7,7 @@ For instance, we compiled the project in
 
 - arm systems using Raspbian
 
+When you download the binary please give $chmod +x attack_procedural_deb.out 
+
 
 

@@ -20,9 +20,10 @@ This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.
 
 ## Getting Started
 
-First, you need to install the following programs.
+First, you need to install the following programs. You need a linux platform.
 
 * [GMP](https://gmplib.org/) - Arithmetic without limitations
+For instance, $sudo apt-get install libgmp3-dev)
 * [args](https://github.com/Taywee/args) - Argument parsing library
 * [OpenSSL](https://www.openssl.org/) - Used for the md5-hashes
 
@@ -87,6 +88,14 @@ sets (Ui) , is the most intensive part of the algorithm.
 In this implementation we parallelized the creation of the elements of the sets (Ui), so that each thread will have to calculate one element and add it to the (Ui) set.
 
 Also we use the [libstdc++ parallel mode](https://gcc.gnu.org/onlinedocs/libstdc++/manual/parallel_mode_using.html) for the functions sort,intersection and find_if.
+
+## Possible errors
+-  for some reason you get the following error
+error while loading shared libraries: libcrypto.so.1.0.0: cannot open shared object file: No such file or directory
+you can install libcrypto.so.1.0.0 by executing
+$wget http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb
+$sudo apt install ./libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb
+
 
 
 ## Acknowledgments

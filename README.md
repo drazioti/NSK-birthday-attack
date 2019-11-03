@@ -90,7 +90,7 @@ In this implementation we parallelized the creation of the elements of the sets 
 Also we use the [libstdc++ parallel mode](https://gcc.gnu.org/onlinedocs/libstdc++/manual/parallel_mode_using.html) for the functions sort,intersection and find_if.
 
 ## Possible errors
-If for some reason you get the following error
+* If for some reason you get the following error
 
 error while loading shared libraries: libcrypto.so.1.0.0: cannot open shared object file: No such file or directory
 

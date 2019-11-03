@@ -92,14 +92,14 @@ Also we use the [libstdc++ parallel mode](https://gcc.gnu.org/onlinedocs/libstdc
 ## Possible errors
 * If for some reason you get the following error
 
+```
 error while loading shared libraries: libcrypto.so.1.0.0: cannot open shared object file: No such file or directory
-
-you can install libcrypto.so.1.0.0 by executing
-
+```
+you can install libcrypto.so.1.0.0 by executing :
+```
 $wget http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb
-
 $sudo apt install ./libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb
-
+```
 
 
 ## Acknowledgments

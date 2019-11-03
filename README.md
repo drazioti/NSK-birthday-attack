@@ -26,7 +26,7 @@ First, you need to install the following programs. You need a linux platform.
 
 For instance, 
 ```
-$sudo apt-get install libgmp3-dev)
+$sudo apt-get install libgmp3-dev
 ```
 * [args](https://github.com/Taywee/args) - Argument parsing library
 * [OpenSSL](https://www.openssl.org/) - Used for the md5-hashes
@@ -48,7 +48,7 @@ $cd NSK-birthday-attack/parallel/
 $make all2par
 ```
 
-This make argument, builds the project and we get multy.out which is the excecutable.
+This make argument builds the project and in this way we get multy.out, which is our excecutable.
 
 ### Running the attack
 
